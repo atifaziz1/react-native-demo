@@ -16,7 +16,8 @@ public class DemoPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
-    modules.add(new DemoModule(reactContext));
+//    modules.add(new DemoModule(reactContext));
+    modules.add(new AndroidHijriDateWrapper(reactContext));
     return modules;
   }
 
